@@ -2,8 +2,8 @@ import { PrismaClient } from "@prisma/client";
 import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
 import "dotenv/config";
 
-const adapter = new PrismaBetterSqlite3({ 
-  url: process.env.DATABASE_URL as string 
+const adapter = new PrismaBetterSqlite3({
+  url: process.env.DATABASE_URL || "file:./dev.db"
 });
 const prisma = new PrismaClient({ adapter });
 
@@ -152,6 +152,7 @@ async function main() {
   await prisma.coupon.deleteMany();
   await prisma.orderItem.deleteMany();
   await prisma.review.deleteMany();
+  await prisma.favorite.deleteMany();
   await prisma.order.deleteMany();
   await prisma.product.deleteMany();
   await prisma.user.deleteMany();
