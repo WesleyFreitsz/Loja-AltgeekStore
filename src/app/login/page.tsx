@@ -7,6 +7,7 @@ import { Lock, Mail, Loader2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import { toast } from "react-hot-toast";
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -40,7 +41,7 @@ export default function LoginPage() {
         router.push("/perfil");
       }
     } catch (error: any) {
-      alert(error.message);
+      toast.error("Erro ao fazer login verifique seu login e senha");
     } finally {
       setLoading(false);
     }
