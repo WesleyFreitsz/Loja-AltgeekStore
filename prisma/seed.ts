@@ -75,56 +75,29 @@ const products = [
     category: "Acessórios",
     isPromotion: false,
     specs: JSON.stringify(["70% Algodão / 19% Poliamida / 6% Elastano", "Tamanho 33-40", "Cano Alto", "Estampa Jacquard"])
-  },
-  {
-    name: "Imãs Summer Vibes",
-    description: "Conjunto de imãs colecionáveis para decorar seu setup ou geladeira com vibes de verão.",
-    price: 12.00,
-    oldPrice: 15.00,
-    isPromotion: true,
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/products/imans-summer-vibes1-807cdb791107f5003717722110980723-640-0.webp",
-    category: "Acessórios",
-    specs: JSON.stringify(["Vinil Magnético", "Corte Especial", "Cores Vibrantes", "Resistente a Água"])
-  },
-  {
-    name: "Chaveiro Sad Girls Club",
-    description: "Acessório minimalista para carregar seu estilo onde for. Feito em material durável.",
-    price: 25.00,
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/products/chaveiro-sad-girls1-807cdb791107f5003717722110980723-640-0.webp",
-    category: "Acessórios",
-    isPromotion: false,
-    specs: JSON.stringify(["Acrílico Premium", "Argola Reforçada", "Impressão UV", "Design Exclusivo"])
-  },
-  {
-    name: "Ecobag Tarot Moon",
-    description: "Ecobag 100% algodão, resistente e estilosa para o seu dia a dia.",
-    price: 49.90,
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/products/ecobag-tarot-moon1-807cdb791107f5003717722110980723-640-0.webp",
-    category: "Acessórios",
-    isPromotion: false,
-    specs: JSON.stringify(["100% Algodão", "Alça Reforçada", "Estampa Silk Screen", "Tamanho 40x40cm"])
   }
 ];
 
+
 const banners = [
   {
-    title: "Suporte Especializado",
-    subtitle: "Pronto para te ajudar sempre que precisar.",
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/themes/recife/slide-1719842047024-1510812419-9ef6f21cc531d0599f639f75a345e1741719842073.png?4995783962008207291",
-    link: "https://chat.whatsapp.com/Elp7KclvYRD0CHgwEulyNt?mode=wwt",
+    title: "Cupom de Inauguração",
+    subtitle: "BEM-VINDO À ALTGEEKSTORE",
+    image: "/banner2.png",
+    link: "/catalogo",
     order: 1
   },
   {
-    title: "Artistas Nacionais",
-    subtitle: "Estampas criadas por talentos brasileiros.",
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/themes/recife/slide-1719842047024-2209630783-9b838dc38f95a8b4dc5b7ac4d65630a71719842074.png?4995783962008207291",
+    title: "Promoção de Inverno",
+    subtitle: "2 Moletons pelo preço de 1",
+    image: "/banner3.png",
     link: "/catalogo",
     order: 2
   },
   {
-    title: "+100 Mil Clientes",
-    subtitle: "Desde 2013 encantando nerds em todo o Brasil.",
-    image: "https://acdn-us.mitiendanube.com/stores/001/078/806/themes/recife/slide-1719842047024-1590517999-09139956db956cbe23d6260aa6eecb831719842075.png?4995783962008207291",
+    title: "Frete Grátis",
+    subtitle: "Aproveite em todo o site",
+    image: "/banner1.png",
     link: "/catalogo",
     order: 3
   }

@@ -41,7 +41,7 @@ export default function LoginPage() {
         router.push("/perfil");
       }
     } catch (error: any) {
-      toast.error("Erro ao fazer login verifique seu login e senha");
+      toast.error("Erro ao fazer login. Verifique seu login e senha.");
     } finally {
       setLoading(false);
     }
