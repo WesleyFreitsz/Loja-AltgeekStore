@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 import { prisma } from "@/lib/prisma";
 import crypto from "crypto";
 
-const SECRET = process.env.JWT_SECRET 
+const SECRET = process.env.JWT_SECRET || "fallback-secret-para-build";
 
 export function signToken(payload: any) {
   const header = Buffer.from(JSON.stringify({ alg: "HS256", typ: "JWT" })).toString("base64url");
